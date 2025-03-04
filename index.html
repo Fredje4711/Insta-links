@@ -3,71 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diabetes Liga Midden-Limburg Links</title>
+    <title>Diabetes Liga Midden-Limburg</title>
     <style>
+        /* Algemene body instellingen */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white;
-            color: #333;
-        }
-        .header {
-            background-color: #23a9e4; /* De blauwe achtergrond voor de header */
-            text-align: center;
-            padding-top: 10px; /* Kleine ruimte boven het logo */
-            padding-bottom: 10px; /* Kleine ruimte onder het logo */
-        }
-        img {
-            width: 125px; /* 50% kleinere breedte dan eerst */
-            height: auto; /* De hoogte wordt automatisch aangepast */
-            margin-top: 10px;
-        }
-        .buttons {
-            background-color: #23a9e4; /* Kleur voor de knoppen */
-            padding: 20px 0; /* Geef wat padding aan de knoppen */
-            text-align: center;
-        }
-        .button {
-            display: block;
-            width: 80%;
-            margin: 10px auto;
-            padding: 10px;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            color: white;
-            background-color: #1a88c0;
-            border: 2px solid white;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        .button:hover {
-            background-color: #17a1d3;
+            background-color: #23a9e4; /* Achtergrondkleur van de gehele pagina */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
         }
 
-        /* Zorg ervoor dat alles goed schaalt voor mobiel */
-        @media (max-width: 600px) {
-            img {
-                width: 100px; /* Maak het logo kleiner voor kleinere schermen */
-                height: auto;
-            }
-            .button {
-                width: 90%; /* Maak de knoppen groter voor mobiel */
-                font-size: 16px; /* Kleinere tekst voor knoppen op mobiel */
-            }
+        /* Logo instellingen */
+        .logo {
+            margin-top: 20px;
+            width: 120px;
+            height: auto;
+        }
+
+        /* Knoppen */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .button {
+            background-color: #1d8db7; /* Donkerder dan de achtergrondkleur */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 2px solid white; /* Witte rand rond de knoppen */
+            text-decoration: none;
+            display: block;
+        }
+
+        .button:hover {
+            background-color: #186b84; /* Donkerder bij hover */
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://raw.githubusercontent.com/Fredje4711/Insta-links/main/Logo.png" alt="Diabetes Liga Midden-Limburg Logo">
-    </div>
-    <div class="buttons">
-        <a href="https://www.dlml.be" class="button" target="_blank">Bezoek onze Website</a>
-        <a href="https://www.diabetes.be" class="button" target="_blank">Diabetes.be</a>
-        <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button" target="_blank">Facebook Pagina</a>
-        <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="button" target="_blank">YouTube Kanaal</a>
+    <!-- Logo bovenaan -->
+    <img src="https://github.com/Fredje4711/Insta-links/blob/main/Logo.png?raw=true" alt="Diabetes Liga Midden-Limburg Logo" class="logo">
+
+    <!-- Knoppen sectie -->
+    <div class="button-container">
+        <a href="https://www.dlml.be" class="button">www.dlml.be</a>
+        <a href="https://www.diabetes.be" class="button">www.diabetes.be</a>
+        <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button">Facebook</a>
+        <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="button">YouTube</a>
     </div>
 </body>
 </html>
