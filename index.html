@@ -12,19 +12,21 @@
             background-color: white;
             color: #333;
         }
-        .container {
+        .header {
+            background-color: #23a9e4; /* De blauwe achtergrond voor de header */
             text-align: center;
-            padding: 20px;
+            padding-top: 10px; /* Kleine ruimte boven het logo */
+            padding-bottom: 10px; /* Kleine ruimte onder het logo */
         }
         img {
-            width: 250px;
-            height: 332px;
-            margin-bottom: 20px;
+            width: 125px; /* 50% kleinere breedte dan eerst */
+            height: auto; /* De hoogte wordt automatisch aangepast */
+            margin-top: 10px;
         }
         .buttons {
-            background-color: #23a9e4;
-            border-radius: 12px;
-            padding: 20px;
+            background-color: #23a9e4; /* Kleur voor de knoppen */
+            padding: 20px 0; /* Geef wat padding aan de knoppen */
+            text-align: center;
         }
         .button {
             display: block;
@@ -43,17 +45,29 @@
         .button:hover {
             background-color: #17a1d3;
         }
+
+        /* Zorg ervoor dat alles goed schaalt voor mobiel */
+        @media (max-width: 600px) {
+            img {
+                width: 100px; /* Maak het logo kleiner voor kleinere schermen */
+                height: auto;
+            }
+            .button {
+                width: 90%; /* Maak de knoppen groter voor mobiel */
+                font-size: 16px; /* Kleinere tekst voor knoppen op mobiel */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <img src="https://raw.githubusercontent.com/Fredje4711/Insta-links/main/Logo.png" alt="Diabetes Liga Midden-Limburg Logo">
-        <div class="buttons">
-            <a href="https://www.dlml.be" class="button" target="_blank">Bezoek onze Website</a>
-            <a href="https://www.diabetes.be" class="button" target="_blank">Diabetes.be</a>
-            <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button" target="_blank">Facebook Pagina</a>
-            <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="button" target="_blank">YouTube Kanaal</a>
-        </div>
+    </div>
+    <div class="buttons">
+        <a href="https://www.dlml.be" class="button" target="_blank">Bezoek onze Website</a>
+        <a href="https://www.diabetes.be" class="button" target="_blank">Diabetes.be</a>
+        <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button" target="_blank">Facebook Pagina</a>
+        <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="button" target="_blank">YouTube Kanaal</a>
     </div>
 </body>
 </html>
