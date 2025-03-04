@@ -1,77 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLML Links</title>
+    <title>Diabetes Liga Midden-Limburg Links</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: white;
+            color: #333;
         }
-
         .container {
-            background-color: #23a9e4; /* Achtergrondkleur voor de knoppen sectie */
+            text-align: center;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            justify-content: center;
         }
-
-        .logo {
-            max-width: 150px; /* Pas de grootte van het logo aan */
+        img {
+            width: 250px;
+            height: 332px;
             margin-bottom: 20px;
         }
-
-        .btn {
-            background-color: #1f8cb2; /* Donkerdere kleur voor de knop */
-            color: white; /* Kleur van de tekst in de knoppen */
-            padding: 15px 30px;
-            margin: 10px 0;
-            border: 2px solid white; /* Witte rand rondom de knop */
-            border-radius: 25px; /* Afgeronde hoeken */
+        .buttons {
+            background-color: #23a9e4;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 18px;
             text-align: center;
             text-decoration: none;
-            width: 80%; /* Zorgt ervoor dat de knoppen goed passen op mobiele apparaten */
-            font-size: 16px;
-        }
-
-        .btn:hover {
-            background-color: #23a9e4; /* Lichtere kleur bij hover */
             color: white;
-            cursor: pointer;
+            background-color: #1a88c0;
+            border: 2px solid white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-            .logo {
-                max-width: 120px;
-            }
-            .btn {
-                width: 90%; /* Zorgt ervoor dat knoppen breder zijn op kleine schermen */
-                font-size: 18px;
-            }
+        .button:hover {
+            background-color: #17a1d3;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <!-- Logo -->
-    <img src="https://github.com/[jouwgebruikersnaam]/[jouwrepositorynaam]/raw/main/logo.png" alt="DLML Logo" class="logo">
-
-    <!-- Knoppen -->
-    <a href="https://www.dlml.be" class="btn" target="_blank">Bezoek onze website</a>
-    <a href="https://www.diabetes.be" class="btn" target="_blank">Diabetes.be</a>
-    <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="btn" target="_blank">Facebook pagina</a>
-    <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="btn" target="_blank">YouTube kanaal</a>
-</div>
-
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/Fredje4711/Insta-links/main/Logo.png" alt="Diabetes Liga Midden-Limburg Logo">
+        <div class="buttons">
+            <a href="https://www.dlml.be" class="button" target="_blank">Bezoek onze Website</a>
+            <a href="https://www.diabetes.be" class="button" target="_blank">Diabetes.be</a>
+            <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button" target="_blank">Facebook Pagina</a>
+            <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="button" target="_blank">YouTube Kanaal</a>
+        </div>
+    </div>
 </body>
 </html>
