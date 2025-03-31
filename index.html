@@ -3,65 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diabetes Liga Midden-Limburg</title>
+    <title>Diabetes Liga Midden-Limburg - Links</title>
     <style>
         /* Algemene body instellingen */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modernere font stack */
             margin: 0;
             padding: 0;
-            background-color: #23a9e4; /* Achtergrondkleur van de gehele pagina */
+            /* Subtiele gradient achtergrond */
+            background: linear-gradient(to bottom, #23a9e4, #1d8db7);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            height: 100vh;
+            min-height: 100vh; /* Zorgt dat de gradient de hele hoogte vult */
+            padding: 20px; /* Wat ruimte aan de zijkanten */
+            box-sizing: border-box; /* Zorgt dat padding binnen de body-afmetingen valt */
+        }
+
+        /* Container voor de hoofdcontent */
+        .container {
+            width: 100%;
+            max-width: 600px; /* Maximale breedte voor betere leesbaarheid op brede schermen */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         /* Logo instellingen */
         .logo {
-            margin-top: 20px;
-            width: 120px;
+            margin-top: 5px;
+            width: 250px; /* Behoud de grootte */
             height: auto;
+            margin-bottom: 15px; /* Ruimte onder het logo */
         }
 
-        /* Knoppen */
+        /* Titel onder het logo */
+        h1 {
+            font-size: 1.5em; /* Iets groter dan standaard tekst */
+            color: white;
+            margin-top: 0;
+            margin-bottom: 30px; /* Ruimte boven de knoppen */
+            font-weight: 600; /* Iets dikker */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+        }
+
+        /* Knoppen container */
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-top: 30px;
-            width: 100%;
-            padding: 0 20px;
+            gap: 15px; /* Iets meer ruimte tussen knoppen */
+            width: 100%; /* Knoppen vullen de container breedte */
         }
 
+        /* Knoppen styling */
         .button {
-            background-color: #1d8db7; /* Donkerder dan de achtergrondkleur */
-            color: white;
-            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9); /* Lichter, semi-transparant wit */
+            color: #1d8db7; /* Blauwe tekst voor contrast */
+            padding: 18px 20px; /* Meer verticale padding */
             text-align: center;
             font-size: 18px;
+            font-weight: 600; /* Iets dikkere tekst */
             border-radius: 10px;
-            border: 2px solid white; /* Witte rand rond de knoppen */
+            border: none; /* Geen aparte rand nodig */
             text-decoration: none;
             display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Vloeiende overgangen */
         }
 
+        /* Knoppen hover effect */
         .button:hover {
-            background-color: #186b84; /* Donkerder bij hover */
+            background-color: #ffffff; /* Volledig wit bij hover */
+            transform: scale(1.03); /* Lichte groei bij hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Iets meer schaduw bij hover */
+            color: #186b84; /* Iets donkerder blauwe tekst bij hover */
         }
+
+        /* Optionele Footer */
+        footer {
+            margin-top: 40px; /* Ruimte boven de footer */
+            padding-bottom: 20px; /* Ruimte onderaan */
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8); /* Lichter wit */
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        /* --- NIEUWE CSS HIERONDER --- */
+        /* Media Query for smaller screens to stack the title */
+        @media (max-width: 480px) { /* Apply styles when screen width is 480px or less */
+            h1 {
+                line-height: 1.2; /* Adjust line height slightly for stacked text */
+                margin-bottom: 25px; /* Slightly less space below stacked title */
+            }
+            .h1-linebreak {
+                display: block; /* Forces the span onto a new line */
+                margin-top: -0.2em; /* Adjust vertical spacing between the lines if needed */
+            }
+        }
+
     </style>
 </head>
 <body>
-    <!-- Logo bovenaan -->
-    <img src="https://github.com/Fredje4711/Insta-links/blob/main/Logo.png?raw=true" alt="Diabetes Liga Midden-Limburg Logo" class="logo">
+    <div class="container">
+        <!-- Logo bovenaan -->
+        <img src="https://github.com/Fredje4711/Insta-links/blob/main/Logo_2.png?raw=true" alt="Diabetes Liga Midden-Limburg Logo" class="logo">
 
-    <!-- Knoppen sectie -->
-    <div class="button-container">
-        <a href="https://www.dlml.be" class="button">www.dlml.be</a>
-        <a href="https://www.diabetes.be" class="button">www.diabetes.be</a>
-        <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button">Facebook</a>
-        <a href="https://www.youtube.com/@Diabetesligamiddenlimburg/xregexp" class="button">YouTube</a>
+        <!-- Titel -->
+        <h1>Diabetes Liga <span class="h1-linebreak">Midden-Limburg</span></h1> <!-- Span toegevoegd -->
+
+        <!-- Knoppen sectie -->
+        <div class="button-container">
+            <a href="https://www.dlml.be" class="button" target="_blank" rel="noopener noreferrer">Bezoek onze Website (DLML)</a>
+            <a href="https://www.diabetes.be" class="button" target="_blank" rel="noopener noreferrer">Diabetes Liga Vlaanderen</a>
+            <a href="https://www.facebook.com/p/Diabetes-Liga-Midden-Limburg-100091325418693/?locale=nl_NL" class="button" target="_blank" rel="noopener noreferrer">Volg ons op Facebook</a>
+            <a href="https://www.youtube.com/@Diabetesligamiddenlimburg" class="button" target="_blank" rel="noopener noreferrer">Bekijk onze YouTube</a> <!-- Corrected YT link -->
+        </div>
     </div>
+
+    <!-- Optionele Footer -->
+    <footer>
+        © <span id="year"></span> Diabetes Liga Midden-Limburg
+    </footer>
+
+    <script>
+        // Simpel scriptje om het jaar in de footer automatisch bij te werken
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
