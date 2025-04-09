@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DLML - Krantenartikel Eddy Foulon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: linear-gradient(90deg, #23a9e4, #54c1f0);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .button {
+      background-color: #23a9e4;
+      color: white;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #1b88ba;
+    }
+
+    .content {
+      max-width: 800px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .intro-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 0rem;
+    }
+
+    .intro-text a {
+      color: #23a9e4;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Krantenartikel over Diabetes & Screening</h1>
+  </header>
+
+  <div class="content">
+    <p class="intro-text">
+      <strong>Eddy Foulon</strong>, medisch adviseur van <strong>Diabetes Liga Midden-Limburg</strong>, legt uit waarom 
+      <strong>vroegtijdige screening</strong> zo belangrijk is.<br>
+      Lees hieronder het volledige artikel zoals verschenen in de krant.<br><br>
+      <span style="color:#23a9e4; font-weight:bold;">
+        Benieuwd naar jouw eigen risico?  
+        <a href="#doetest">Doe dan zeker ook de test onderaan deze pagina.</a>
+      </span>
+    </p>
+
+    <img class="article-image" src="Artikel-Eddy.png" alt="Krantenartikel Eddy Foulon">
+
+    <a class="button" href="https://fredje4711.github.io/screening/" target="_blank" id="doetest">
+      🧪 Doe de test
+    </a>
+  </div>
+</body>
+</html>
